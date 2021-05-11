@@ -15,5 +15,5 @@ json.review restaurant.reviews&.average(:value).round()
 json.image_url polymorphic_url(restaurant.image) if restaurant.image.attached?
 ​
 json.product_categories restaurant.product_categories do |product_category|
- json.partial! 'product_categories/product_category', product_category: product_category
+  json.partial! 'product_categories/product_category', product_category: product_category
 end
